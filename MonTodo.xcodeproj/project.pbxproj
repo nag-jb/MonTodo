@@ -12,6 +12,7 @@
 		1A56792025EBD57600C932CC /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A56791E25EBD57600C932CC /* TodoTableViewCell.swift */; };
 		1A56792125EBD57600C932CC /* TodoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A56791F25EBD57600C932CC /* TodoTableViewCell.xib */; };
 		1AA848A725EC95C700A482F5 /* sord.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA848A625EC95C700A482F5 /* sord.png */; };
+		1AA848B125ECAC3A00A482F5 /* monster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1AA848B025ECAC3A00A482F5 /* monster.jpg */; };
 		1AB1606E25E89FF800FCEAE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1606D25E89FF800FCEAE7 /* AppDelegate.swift */; };
 		1AB1607025E89FF800FCEAE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1606F25E89FF800FCEAE7 /* SceneDelegate.swift */; };
 		1AB1607225E89FF800FCEAE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1607125E89FF800FCEAE7 /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 		1A56791E25EBD57600C932CC /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
 		1A56791F25EBD57600C932CC /* TodoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableViewCell.xib; sourceTree = "<group>"; };
 		1AA848A625EC95C700A482F5 /* sord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sord.png; path = image/sord.png; sourceTree = SOURCE_ROOT; };
+		1AA848B025ECAC3A00A482F5 /* monster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = monster.jpg; path = image/monster.jpg; sourceTree = SOURCE_ROOT; };
 		1AB1606A25E89FF800FCEAE7 /* MonTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB1606D25E89FF800FCEAE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AB1606F25E89FF800FCEAE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		1AB1606C25E89FF800FCEAE7 /* MonTodo */ = {
 			isa = PBXGroup;
 			children = (
+				1AA848B025ECAC3A00A482F5 /* monster.jpg */,
 				1AA848A625EC95C700A482F5 /* sord.png */,
 				1A56791925EBCAEB00C932CC /* 005_b.png */,
 				1A56791425EBC06F00C932CC /* quest_background.jpg */,
@@ -251,6 +254,7 @@
 			files = (
 				1A56791525EBC06F00C932CC /* quest_background.jpg in Resources */,
 				1AB1607A25E89FF900FCEAE7 /* LaunchScreen.storyboard in Resources */,
+				1AA848B125ECAC3A00A482F5 /* monster.jpg in Resources */,
 				1AB1607725E89FF900FCEAE7 /* Assets.xcassets in Resources */,
 				1AB1607525E89FF800FCEAE7 /* Main.storyboard in Resources */,
 				1A56791A25EBCAEB00C932CC /* 005_b.png in Resources */,

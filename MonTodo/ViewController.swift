@@ -49,7 +49,7 @@ class ViewController: UIViewController, UITableViewDataSource {
 //----------------------------------------------------------------------------------------------------------------
     //セルの数を指定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 10
+        return 3
     }
     
     
