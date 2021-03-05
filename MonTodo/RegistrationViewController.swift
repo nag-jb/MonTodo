@@ -24,10 +24,10 @@ class RegistrationViewController: UIViewController,UITextFieldDelegate,  UIPicke
     
     //ユーザデフォルトにアクセスするための倉庫を作成
     var saveDate: UserDefaults = UserDefaults.standard
-
     
     
-    //ViewControllerのviewがロードされた後に呼び出される処理
+    
+//MARK: - ロード時に呼び出される処理
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,8 +44,7 @@ class RegistrationViewController: UIViewController,UITextFieldDelegate,  UIPicke
     
     
     
-//----------------------------------------------------------------------------------------------------------------
-    //日付のpicker設定
+//MARK: - 日付のpicker設定
     func setupToolbar(){
         
         datePicker.datePickerMode = .dateAndTime
@@ -64,8 +63,7 @@ class RegistrationViewController: UIViewController,UITextFieldDelegate,  UIPicke
     
     
     
-//----------------------------------------------------------------------------------------------------------------
-    //ジャンル、レベルのpicker設定
+//MARK: - ジャンル、レベルのpicker設定
     func createPickerView(){
         //picker設定@genre
         genrePickerView.delegate = self
@@ -99,8 +97,7 @@ class RegistrationViewController: UIViewController,UITextFieldDelegate,  UIPicke
     
     
     
-//----------------------------------------------------------------------------------------------------------------
-    //picker終了
+//MARK: - picker終了
     @objc func done(){
         genreTextField.endEditing(true)
         levelTextField.endEditing(true)
@@ -111,7 +108,7 @@ class RegistrationViewController: UIViewController,UITextFieldDelegate,  UIPicke
         dateTextField.endEditing(true)
         let formatter = DateFormatter()
         
-        formatter.dateFormat = "yyyy / MM / dd   HH : mm"
+        formatter.dateFormat = "yyyy/MM/dd  HH:mm"
         dateTextField.text = "\(formatter.string(from: datePicker.date))"
     }
     
@@ -153,21 +150,38 @@ class RegistrationViewController: UIViewController,UITextFieldDelegate,  UIPicke
     
     
     
-//----------------------------------------------------------------------------------------------------------------
-    //クエスト登録ボタン
+//MARK: - ボタン
     @IBAction func save(){
         
         //タスク名を変数に格納、その後フィールドを空にする
         todoQuest.append(questTextField.text!)
         questTextField.text = ""
         
-        //項目名を変数に格納、その後フィールドを空にする
+        //ジャンルを変数に格納、その後フィールドを空にする
         todoGenre.append(genreTextField.text!)
         genreTextField.text = ""
         
-        //項目名を変数に格納、その後フィールドを空にする
+        //難易度を変数に格納、その後フィールドを空にする
         todoLevel.append(levelTextField.text!)
         levelTextField.text = ""
+        
+        
+        todoDate.append(dateTextField.text!)
+        dateTextField.text = ""
+        
+        //メモを変数に格納、その後フィールドを空にする
+        todoMemo.append(memoTextView.text!)
+        memoTextView.text = ""
+        
+        
+        //userDefaultsに書込
+        saveDate.set(todoQuest, forKey: "quest")
+        saveDate.set(todoGenre, forKey: "genre")
+        saveDate.set(todoLevel, forKey: "level")
+        saveDate.set(todoDate, forKey: "date")
+        saveDate.set(todoMemo, forKey: "memo")
+        
+        
         
         //画面を閉じる
         self.dismiss(animated: true, completion: nil)
@@ -176,8 +190,14 @@ class RegistrationViewController: UIViewController,UITextFieldDelegate,  UIPicke
     
     
     
-//----------------------------------------------------------------------------------------------------------------
-    //キーボード非表示機能
+    @IBAction func cancel(){
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
+    
+//MARK: - キーボード非表示機能
     func textFieldShouldReturn(_ textField: UITextField) -> Bool{
         
         //TextFieldのファーストレスポンダを止める

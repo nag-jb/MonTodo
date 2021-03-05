@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A39AC2825F12C8E0041B182 /* 005.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A39AC2725F12C8E0041B182 /* 005.png */; };
+		1A39AC2D25F12F400041B182 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A39AC2C25F12F400041B182 /* heart.png */; };
+		1A39AC3225F282550041B182 /* PlofileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39AC3125F282550041B182 /* PlofileViewController.swift */; };
+		1A39AC3725F285800041B182 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39AC3625F285800041B182 /* ProfileEditViewController.swift */; };
+		1A39AC4425F289BF0041B182 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39AC4325F289BF0041B182 /* MainTabBarController.swift */; };
 		1A56791525EBC06F00C932CC /* quest_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A56791425EBC06F00C932CC /* quest_background.jpg */; };
 		1A56791A25EBCAEB00C932CC /* 005_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A56791925EBCAEB00C932CC /* 005_b.png */; };
 		1A56792025EBD57600C932CC /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A56791E25EBD57600C932CC /* TodoTableViewCell.swift */; };
 		1A56792125EBD57600C932CC /* TodoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A56791F25EBD57600C932CC /* TodoTableViewCell.xib */; };
 		1AA848A725EC95C700A482F5 /* sord.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA848A625EC95C700A482F5 /* sord.png */; };
 		1AA848B125ECAC3A00A482F5 /* monster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1AA848B025ECAC3A00A482F5 /* monster.jpg */; };
+		1AA848BC25ECB8B900A482F5 /* slime.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA848B925ECB8B900A482F5 /* slime.png */; };
+		1AA848CB25ECBCF800A482F5 /* heroMan.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA848CA25ECBCF800A482F5 /* heroMan.png */; };
+		1AA848CF25ECBD8A00A482F5 /* heroWoman.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AA848D125ECBD8A00A482F5 /* heroWoman.png */; };
+		1AA848D725ECC95A00A482F5 /* MonsterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA848D525ECC95900A482F5 /* MonsterCollectionViewController.swift */; };
+		1AA848D825ECC95A00A482F5 /* MonsterCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AA848D625ECC95A00A482F5 /* MonsterCollectionViewController.xib */; };
 		1AB1606E25E89FF800FCEAE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1606D25E89FF800FCEAE7 /* AppDelegate.swift */; };
 		1AB1607025E89FF800FCEAE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1606F25E89FF800FCEAE7 /* SceneDelegate.swift */; };
 		1AB1607225E89FF800FCEAE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB1607125E89FF800FCEAE7 /* ViewController.swift */; };
@@ -42,12 +52,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A56791425EBC06F00C932CC /* quest_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = quest_background.jpg; path = image/quest_background.jpg; sourceTree = SOURCE_ROOT; };
-		1A56791925EBCAEB00C932CC /* 005_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 005_b.png; path = image/button/005_b.png; sourceTree = SOURCE_ROOT; };
+		1A39AC2725F12C8E0041B182 /* 005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 005.png; sourceTree = "<group>"; };
+		1A39AC2C25F12F400041B182 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		1A39AC3125F282550041B182 /* PlofileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlofileViewController.swift; sourceTree = "<group>"; };
+		1A39AC3625F285800041B182 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		1A39AC4325F289BF0041B182 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		1A56791425EBC06F00C932CC /* quest_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = quest_background.jpg; path = MonTodo/image/quest_background.jpg; sourceTree = SOURCE_ROOT; };
+		1A56791925EBCAEB00C932CC /* 005_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 005_b.png; path = MonTodo/image/005_b.png; sourceTree = SOURCE_ROOT; };
 		1A56791E25EBD57600C932CC /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
 		1A56791F25EBD57600C932CC /* TodoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableViewCell.xib; sourceTree = "<group>"; };
-		1AA848A625EC95C700A482F5 /* sord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sord.png; path = image/sord.png; sourceTree = SOURCE_ROOT; };
-		1AA848B025ECAC3A00A482F5 /* monster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = monster.jpg; path = image/monster.jpg; sourceTree = SOURCE_ROOT; };
+		1AA848A625EC95C700A482F5 /* sord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sord.png; path = MonTodo/image/sord.png; sourceTree = SOURCE_ROOT; };
+		1AA848B025ECAC3A00A482F5 /* monster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = monster.jpg; path = MonTodo/image/monster.jpg; sourceTree = SOURCE_ROOT; };
+		1AA848B925ECB8B900A482F5 /* slime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slime.png; sourceTree = "<group>"; };
+		1AA848CA25ECBCF800A482F5 /* heroMan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heroMan.png; sourceTree = "<group>"; };
+		1AA848D025ECBD8A00A482F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/heroWoman.png; sourceTree = "<group>"; };
+		1AA848D525ECC95900A482F5 /* MonsterCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterCollectionViewController.swift; sourceTree = "<group>"; };
+		1AA848D625ECC95A00A482F5 /* MonsterCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonsterCollectionViewController.xib; sourceTree = "<group>"; };
 		1AB1606A25E89FF800FCEAE7 /* MonTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB1606D25E89FF800FCEAE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AB1606F25E89FF800FCEAE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +110,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AA848B525ECAD0D00A482F5 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				1A39AC2C25F12F400041B182 /* heart.png */,
+				1A39AC2725F12C8E0041B182 /* 005.png */,
+				1AA848D125ECBD8A00A482F5 /* heroWoman.png */,
+				1AA848CA25ECBCF800A482F5 /* heroMan.png */,
+				1AA848B925ECB8B900A482F5 /* slime.png */,
+				1A56791925EBCAEB00C932CC /* 005_b.png */,
+				1A56791425EBC06F00C932CC /* quest_background.jpg */,
+				1AA848A625EC95C700A482F5 /* sord.png */,
+				1AA848B025ECAC3A00A482F5 /* monster.jpg */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		1AB1606125E89FF800FCEAE7 = {
 			isa = PBXGroup;
 			children = (
@@ -113,10 +149,7 @@
 		1AB1606C25E89FF800FCEAE7 /* MonTodo */ = {
 			isa = PBXGroup;
 			children = (
-				1AA848B025ECAC3A00A482F5 /* monster.jpg */,
-				1AA848A625EC95C700A482F5 /* sord.png */,
-				1A56791925EBCAEB00C932CC /* 005_b.png */,
-				1A56791425EBC06F00C932CC /* quest_background.jpg */,
+				1AA848B525ECAD0D00A482F5 /* image */,
 				1AB1606D25E89FF800FCEAE7 /* AppDelegate.swift */,
 				1AB1606F25E89FF800FCEAE7 /* SceneDelegate.swift */,
 				1AB1607125E89FF800FCEAE7 /* ViewController.swift */,
@@ -127,6 +160,11 @@
 				1AB160A825E94E8700FCEAE7 /* RegistrationViewController.swift */,
 				1A56791E25EBD57600C932CC /* TodoTableViewCell.swift */,
 				1A56791F25EBD57600C932CC /* TodoTableViewCell.xib */,
+				1AA848D525ECC95900A482F5 /* MonsterCollectionViewController.swift */,
+				1AA848D625ECC95A00A482F5 /* MonsterCollectionViewController.xib */,
+				1A39AC3125F282550041B182 /* PlofileViewController.swift */,
+				1A39AC3625F285800041B182 /* ProfileEditViewController.swift */,
+				1A39AC4325F289BF0041B182 /* MainTabBarController.swift */,
 			);
 			path = MonTodo;
 			sourceTree = "<group>";
@@ -253,13 +291,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A56791525EBC06F00C932CC /* quest_background.jpg in Resources */,
+				1AA848BC25ECB8B900A482F5 /* slime.png in Resources */,
+				1AA848CB25ECBCF800A482F5 /* heroMan.png in Resources */,
 				1AB1607A25E89FF900FCEAE7 /* LaunchScreen.storyboard in Resources */,
+				1A39AC2D25F12F400041B182 /* heart.png in Resources */,
 				1AA848B125ECAC3A00A482F5 /* monster.jpg in Resources */,
 				1AB1607725E89FF900FCEAE7 /* Assets.xcassets in Resources */,
 				1AB1607525E89FF800FCEAE7 /* Main.storyboard in Resources */,
+				1A39AC2825F12C8E0041B182 /* 005.png in Resources */,
 				1A56791A25EBCAEB00C932CC /* 005_b.png in Resources */,
 				1AA848A725EC95C700A482F5 /* sord.png in Resources */,
+				1AA848CF25ECBD8A00A482F5 /* heroWoman.png in Resources */,
 				1A56792125EBD57600C932CC /* TodoTableViewCell.xib in Resources */,
+				1AA848D825ECC95A00A482F5 /* MonsterCollectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +328,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A39AC3725F285800041B182 /* ProfileEditViewController.swift in Sources */,
+				1A39AC3225F282550041B182 /* PlofileViewController.swift in Sources */,
+				1A39AC4425F289BF0041B182 /* MainTabBarController.swift in Sources */,
 				1AB1607225E89FF800FCEAE7 /* ViewController.swift in Sources */,
+				1AA848D725ECC95A00A482F5 /* MonsterCollectionViewController.swift in Sources */,
 				1AB1606E25E89FF800FCEAE7 /* AppDelegate.swift in Sources */,
 				1AB160A925E94E8700FCEAE7 /* RegistrationViewController.swift in Sources */,
 				1A56792025EBD57600C932CC /* TodoTableViewCell.swift in Sources */,
@@ -324,6 +372,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1AA848D125ECBD8A00A482F5 /* heroWoman.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AA848D025ECBD8A00A482F5 /* Base */,
+			);
+			name = heroWoman.png;
+			sourceTree = "<group>";
+		};
 		1AB1607325E89FF800FCEAE7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

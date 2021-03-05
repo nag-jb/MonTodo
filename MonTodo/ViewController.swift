@@ -23,7 +23,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     var todoArray = [String]()
 
     
-//----------------------------------------------------------------------------------------------------------------
+//MARK: - ロード時に呼び出される処理
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +33,19 @@ class ViewController: UIViewController, UITableViewDataSource {
         //カスタムセルを登録
         self.table.register(UINib(nibName: "TodoTableViewCell", bundle: nil), forCellReuseIdentifier: "questCell")
         configureTableView()
+        
+        if UserDefaults.standard.object(forKey: "quest") != nil {
+            todoQuest = UserDefaults.standard.object(forKey: "quest") as! [String]
+            todoDate = UserDefaults.standard.object(forKey: "date") as! [String]
+            
+        }
+        
+        print(todoQuest)
+        print(todoGenre)
+        print(todoLevel)
+        print(todoDate)
+        print(todoMemo)
+        
     }
 
     
@@ -42,14 +55,19 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.viewWillAppear(animated)
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for : .default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
+        
+        //reload
+        table.reloadData()
+        print("0")
     }
     
     
     
-//----------------------------------------------------------------------------------------------------------------
+    
+//MARK: - セル設定
     //セルの数を指定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 3
+        return todoQuest.count
     }
     
     
@@ -57,9 +75,35 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "questCell", for: indexPath) as! TodoTableViewCell
         
+        cell.questLabel.text = todoQuest[indexPath.row]
+        cell.dateLabel.text = todoDate[indexPath.row]
+        
+        print(todoQuest)
+        print(todoGenre)
+        print(todoLevel)
+        print(todoDate)
+        print(todoMemo)
         
         return cell
     }
+    
+    
+    //MARK: -スワイプしたセルの削除
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete{
+            todoQuest.remove(at: indexPath.row)
+            todoDate.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath as IndexPath], with: UITableView.RowAnimation.automatic)
+            //userDefaultsへ書込
+            UserDefaults.standard.set(todoQuest, forKey: "title")
+            UserDefaults.standard.set(todoDate, forKey: "date")
+        }
+        
+        print("e")
+        print(todoQuest)
+        print(todoDate)
+    }
+    
     
     
     func configureTableView(){
